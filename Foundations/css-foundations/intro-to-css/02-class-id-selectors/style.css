@@ -1,0 +1,18 @@
+.redbg {
+    background-color: lightcoral;
+    color: black;
+}
+
+.cooler {
+    font-size: 35px;
+}
+
+#blueColor {
+    color: blue;
+    font-size: 50px;
+}
+
+#boldFont {
+    font-size: 30px;
+    font-weight: bold;
+}
