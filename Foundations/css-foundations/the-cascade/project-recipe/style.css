@@ -1,0 +1,30 @@
+
+h1 {
+    font-size: 70px;
+}
+
+
+a {
+    margin-left: 60px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.links {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+#ampalaya-pic {
+    width: 50%;
+}
+
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, p, .list-container {
+    margin-left: 40px;
+}
