@@ -2,16 +2,20 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
-body {
+body,ul {
   margin: 0;
+  padding: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  
 }
 
 .profile-image {
@@ -37,12 +41,38 @@ button {
   padding: 8px 24px;
 }
 
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
-ul {
-  list-style-type: none;
+.left-elements, .right-elements {
+  display: flex;
+}
+
+.links {
+  align-self: center;
+}
+
+.right-elements > .profile-image {
+  align-self: center;
+}
+
+.notifications {
+  height: 35px;
+  align-self: center;
+}
+
+.logo, .profile-image {
+  margin: 8px;
+}
+
+.links > li,.notifications {
+margin: 16px;
 }
