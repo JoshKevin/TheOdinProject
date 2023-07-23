@@ -140,6 +140,7 @@
 .sign-up-container {
     display: flex;
     justify-content: space-between;
+    color: white;
     margin: auto 0;
     background-color: #3882f6;
     border-radius: 5px;
