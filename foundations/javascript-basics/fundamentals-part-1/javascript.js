@@ -1,3 +1,4 @@
+//MATH 1
 // let a = 10,
 //     b = 14,
 //     c = 4,
@@ -12,13 +13,13 @@
 //MATH 2
 // Final result should be 4633.33
 // Add/update your code here
-let result = 7 + 13 / 9 + 7;
-let result2 = 100 / 2 * 6;
-console.log(result);
-result *= result2;
-console.log(result);
-let finalResult = result.toFixed(2);
-console.log(typeof(finalResult))
-let finalNumber = ++finalResult;
-console.log(finalNumber)
-console.log(typeof(finalNumber))
+// let result = 7 + 13 / 9 + 7;
+// let result2 = 100 / 2 * 6;
+// console.log(result);
+// result *= result2;
+// console.log(result);
+// let finalResult = result.toFixed(2);
+// console.log(typeof(finalResult))
+// let finalNumber = ++finalResult;
+// console.log(finalNumber)
+// console.log(typeof(finalNumber))
