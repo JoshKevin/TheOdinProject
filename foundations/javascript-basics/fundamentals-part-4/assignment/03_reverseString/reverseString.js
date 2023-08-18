@@ -1,6 +1,5 @@
-const reverseString = function() {
+function reverseString(str) {
+    result = str.split('');
+    return result;
+}
 
-};
-
-// Do not edit below this line
-module.exports = reverseString;
