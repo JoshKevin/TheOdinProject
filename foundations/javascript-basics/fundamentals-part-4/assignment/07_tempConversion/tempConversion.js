@@ -1,11 +1,12 @@
-const convertToCelsius = function() {
-};
+function convertToCelsius(F) {
+  C = (F-32) * 5/9;
+  rounded = Math.round(C * 10) / 10
+  return rounded;
+}
 
-const convertToFahrenheit = function() {
-};
+function convertToFahrenheit(C) {
+  F = C * (9/5) + 32
+  var rounded = Math.round(F * 10) / 10
+  return rounded;
+}
 
-// Do not edit below this line
-module.exports = {
-  convertToCelsius,
-  convertToFahrenheit
-};
