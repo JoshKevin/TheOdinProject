@@ -29,60 +29,60 @@ const characters = [
     },
 ];
 
-// MAP
-// Get an array of all names
-// mapNames = characters.map(arr => {
-//     return arr.name
-// })
-// console.log(mapNames)
+//  MAP
+//  Get an array of all names
+ mapNames = characters.map(arr => {
+     return arr.name
+ })
+ console.log(mapNames)
 
-// Get an array of all heights
-// mapHeights = characters.map(arr => {
-//     return arr.height
-// })
-// console.log(mapHeights)
+//  Get an array of all heights
+ mapHeights = characters.map(arr => {
+     return arr.height
+ })
+ console.log(mapHeights)
 
-// Get an array of objects with just name and height properties
-// mapNamesHeights = characters.map(arr => {
-//     return `${arr.name}, ${arr.height}`
-// })
-// console.log(mapNamesHeights)
+//  Get an array of objects with just name and height properties
+ mapNamesHeights = characters.map(arr => {
+     return `${arr.name}, ${arr.height}`
+ })
+ console.log(mapNamesHeights)
 
-// Get an array of all first names
-// firstName = characters.map(arr => {
-//     let name = arr.name;
-//     [first, ...rest] = name.split(" ")
-//     return first;
-// })
-// console.log(firstName);
+//  Get an array of all first names
+ firstName = characters.map(arr => {
+     let name = arr.name;
+     [first, ...rest] = name.split(" ")
+     return first;
+ })
+ console.log(firstName);
 
 
-//Filter
-// Get characters with mass greater than 100
-charGreater100 = characters.filter(person => {
-    return (person.mass > 100);
-})
-// console.log(charGreater100);
+// Filter
+//  Get characters with mass greater than 100
+ charGreater100 = characters.filter(person => {
+     return (person.mass > 100);
+ })
+ console.log(charGreater100);
 
 // Get characters with height less than 200
 charLess200 = characters.filter(person => {
     return person.height < 200
 })
-// console.log(charLess200);
+console.log(charLess200);
 
 // Get all male characters
 charMale = characters.filter(character => {
     return character.gender === 'male'
 })
-// console.log(charMale);
+console.log(charMale);
 
 // Get all female characters
 charFemale = characters.filter(character => {
     return character.gender === 'female'
 })
-// console.log(charFemale);
+console.log(charFemale);
 
-//SORT
+// SORT
 // Sort by name
 sortName = characters.sort((a, b)=> {
      if(a.name > b.name) {
@@ -91,7 +91,7 @@ sortName = characters.sort((a, b)=> {
         return -1
      };
 })
-// console.log(sortName)
+console.log(sortName)
 
 // Sort by mass
 sortMass = characters.sort((a, b) => {
@@ -101,7 +101,8 @@ sortMass = characters.sort((a, b) => {
         return -1
      };
 })
-// console.log(sortMass);
+console.log(sortMass);
+
 // Sort by height
 sortHeight = characters.sort((a, b) => {
     if(a.height < b.height) {
@@ -110,7 +111,7 @@ sortHeight = characters.sort((a, b) => {
         return -1
      };
 })
-// console.log(sortHeight);
+console.log(sortHeight);
 
 // Sort by gender
 sortGender = characters.sort((a, b) => {
@@ -120,27 +121,26 @@ sortGender = characters.sort((a, b) => {
         return -1
      };
 })
-// console.log(sortGender);
+console.log(sortGender);
 
 //REDUCE
 // Get the total mass of all characters
 totalMass = characters.reduce((acc, char) => {
     return acc + char.mass;
 }, 0)
-// console.log(totalMass);
+console.log(totalMass);
 
 // Get the total height of all characters
 totalHeight = characters.reduce((acc, char) => {
     return acc + char.height;
 }, 0)
-// console.log(totalHeight);
+console.log(totalHeight);
 
 // Get the total number of characters in all the character names
 totalLetters = characters.reduce((acc, char) => {
-
     return acc + char.name.length;
 }, 0)
-// console.log(totalLetters);
+console.log(totalLetters);
 
 // Get the total number of characters by eye color (hint. a map of eye color to count)
 groupedEyeColor = characters.reduce((acc, cur) => {
