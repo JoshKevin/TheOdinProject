@@ -120,4 +120,36 @@ sortGender = characters.sort((a, b) => {
         return -1
      };
 })
-console.log(sortGender);
+// console.log(sortGender);
+
+//REDUCE
+// Get the total mass of all characters
+totalMass = characters.reduce((acc, char) => {
+    return acc + char.mass;
+}, 0)
+// console.log(totalMass);
+
+// Get the total height of all characters
+totalHeight = characters.reduce((acc, char) => {
+    return acc + char.height;
+}, 0)
+// console.log(totalHeight);
+
+// Get the total number of characters in all the character names
+totalLetters = characters.reduce((acc, char) => {
+
+    return acc + char.name.length;
+}, 0)
+// console.log(totalLetters);
+
+// Get the total number of characters by eye color (hint. a map of eye color to count)
+groupedEyeColor = characters.reduce((acc, cur) => {
+    let eyeColor = cur.eye_color;
+    if (acc[eyeColor]) {
+        acc[eyeColor]++
+    } else {
+        acc[eyeColor] = 1;
+    }
+    return acc
+}, {})
+console.log(groupedEyeColor);
